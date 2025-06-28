@@ -1,0 +1,39 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# Data outputs
+data_outputs/
+*.png
+*.csv
+
+# Environment and package metadata
+.env
+.venv/
+*.egg-info/
+*.log
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and debug artifacts
+*.sqlite3
+*.db
+*.tmp
+debug.log
+
+# Ignore compiled C extensions
+*.so
