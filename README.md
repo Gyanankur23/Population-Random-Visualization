@@ -1,54 +1,191 @@
 # Population-Random-Visualization
 
-A synthetic data generation and analysis project built to simulate large-scale population datasets for preprocessing, visualization, and machine learning workflows.
+A synthetic data generation and analysis project built to simulate large-scale population datasets using Python’s Faker module, followed by data cleaning, imputation, and visual storytelling.
+
+
+# 📁 Project Structure
+
+`
+Population-Random-Visualization/
+├── population_dataset.csv                # Raw synthetic dataset
+├── cleanedpopulationdataset.csv        # Imputed and cleaned version
+├── population_analysis.py                # Script for processing and plotting
+├── data_outputs/                         # All generated CSVs and image charts
+│   ├── head_preview.csv
+│   ├── describe_stats.csv
+│   ├── imputedpopulationdataset.csv
+│   ├── X_input.csv
+│   ├── Y_output.csv
+│   ├── salary_boxplot.png
+│   ├── age_histogram.png
+│   ├── genderpiechart.png
+│   ├── avgsalaryby_country.png
+│   ├── correlation_heatmap.png
+│   ├── devicebysubscription.png
+│   ├── salary_outliers.csv
+│   ├── sortedbyage.csv
+│   ├── filteredseniorhigh_salary.csv
+│   ├── selected_columns.csv
+│   ├── meansalaryby_country.csv
+│   └── finalcleaneddataset.csv
+└── README.md
+`
 
 ---
 
-## 📁 Project Structure
+# ✨ Key Features
 
-
-Population-Random-Visualization/ ├── population_dataset.csv                # Raw synthetic dataset (20,000 rows, 30 columns) ├── cleaned_population_dataset.csv        # Imputed and cleaned version of the dataset ├── population_analysis.py                # Main script for data loading, preprocessing, visualizations ├── data_outputs/                         # Folder for all generated CSVs and image charts │   ├── age_histogram.png │   ├── gender_pie_chart.png │   ├── avg_salary_by_country.png │   ├── correlation_heatmap.png │   ├── device_by_subscription.png │   ├── head_preview.csv │   ├── describe_stats.csv │   ├── salary_outliers.csv │   ├── filtered_senior_high_salary.csv │   ├── sorted_by_age.csv │   ├── X_input.csv │   ├── Y_output.csv │   └── ... ├── README.md                             # Project documentation (this file) └── .gitignore                            # Files/folders to exclude from Git tracking
-
----
-
-## ✨ Features
-
-- Generates a synthetic population dataset using Python and Faker
-- Handles missing values and imputes numerical data
-- Extracts features and labels for model-ready formats
-- Detects outliers and visualizes key data distributions
-- Saves all outputs as CSVs and images for easy reuse
+- 🔹 Synthetic population dataset (20,000 rows, 30 columns) using Faker
+- 🔹 Data imputation with SimpleImputer
+- 🔹 Statistical summaries and exportable outputs
+- 🔹 Stunning data visualizations saved as PNG
+- 🔹 Feature-label separation for modeling workflows
+- 🔹 Outlier detection, filtering, and grouping logic
 
 ---
 
-## 📊 Visualizations Included
+# 📊 Visual Outputs
 
-- Age distribution histogram  
-- Gender proportion pie chart  
-- Average salary by country bar plot  
-- Numeric correlation heatmap  
-- Device usage by subscription tier chart
+## 🧓 Age Distribution Histogram
+Visualizing the frequency distribution of age across the population.
+
+!Age Histogram
 
 ---
 
-## ⚙️ Requirements
+## 👩‍🦰 Gender Proportion Pie Chart
+Represents the gender ratio in the dataset.
 
-- Python 3.8+
-- pandas, numpy, matplotlib, seaborn, scikit-learn, faker
+!Gender Pie Chart
 
-To install dependencies:
+---
 
-```bash
-pip install -r requirements.txt
+## 💰 Top 10 Countries by Average Salary
+Highlights economic disparities based on geographic data.
 
-
-```
+!Average Salary by Country
 
-## 🧾 License
-This project is released under the MIT License. You are free to use, modify, and distribute with proper attribution.
+---
 
-## 👤 Author
-Maintained by @Gyanankur23
-📧 gyanankurcricket20@gmail.com
+## 🧮 Correlation Matrix Heatmap
+Explores relationships between numeric features in the dataset.
 
-If you find this project useful or want to contribute improvements, feel free to fork or raise a pull request!
+!Correlation Heatmap
+
+---
+
+## 💻 Device Usage by Subscription Tier
+Shows how various subscription groups access the service by device.
+
+!Device by Subscription
+
+---
+
+## 📈 Salary Distribution Boxplot
+Detects salary outliers and spread.
+
+!Salary Boxplot
+
+---
+
+## 📂 CSV Snapshots
+
+🧾 head_preview.csv
+Initial 5 rows of the dataset for quick overview.
+
+`csv
+Age,Gender,Country,Annual Salary (USD),Subscription Type,Device Used
+28,female,India,42000,Basic,Laptop
+35,male,USA,81000,Premium,Mobile
+...
+`
+
+---
+
+## 📊 describe_stats.csv
+Statistical summary of numeric columns.
+
+`csv
+              Age  Annual Salary (USD)
+count  20000.00000        20000.000000
+mean      36.47893        73245.823000
+std       12.90834        29145.981200
+...
+`
+
+---
+
+## ⚗️ imputedpopulationdataset.csv
+Cleaned version after mean imputation of missing values.
+
+---
+
+## 📦 Xinput.csv and Youtput.csv
+Model-ready inputs and labels extracted from cleaned dataset.
+
+---
+
+## 📎 salary_outliers.csv
+Subset of population earning above $180,000 annually.
+
+---
+
+## 🔍 filteredseniorhigh_salary.csv
+Users above age 45 with annual salary above $100,000.
+
+---
+
+## 📊 meansalaryby_country.csv
+Average salary grouped by country.
+
+`csv
+Country,Annual Salary (USD)
+USA,84221.25
+Germany,78910.50
+India,41200.00
+...
+`
+
+---
+
+## 📃 selected_columns.csv
+Only Age, Salary, and Device columns.
+
+`csv
+Age,Annual Salary (USD),Device Used
+28,42000,Laptop
+35,81000,Mobile
+...
+`
+
+---
+
+# ⚙️ Setup Instructions
+
+Make sure you have Python 3.8+ installed. Install dependencies:
+
+`bash
+pip install pandas numpy matplotlib seaborn scikit-learn faker
+`
+
+# Run the script:
+
+`bash
+python population_analysis.py
+`
+
+---
+
+# 📄 License
+
+Released under the MIT License. Free to use, modify, and redistribute with proper credit.
+
+---
+
+# 👤 Author
+
+Created and maintained by @Gyanankur23  
+📧 Email: gyanankurcricket20@gmail.com
+
+Love this project? Star it 🌟 — or fork it and build something even cooler!
+`
