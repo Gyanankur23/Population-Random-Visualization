@@ -49,42 +49,42 @@ Population-Random-Visualization/
 ## 🧓 Age Distribution Histogram
 Visualizing the frequency distribution of age across the population.
 
-!Age Histogram
+![Age Distribution](data_outputs/age_histogram.png)
 
 ---
 
 ## 👩‍🦰 Gender Proportion Pie Chart
 Represents the gender ratio in the dataset.
 
-!Gender Pie Chart
+![Gender Proportion](data_outputs/gender_pie_chart.png)
 
 ---
 
 ## 💰 Top 10 Countries by Average Salary
 Highlights economic disparities based on geographic data.
 
-!Average Salary by Country
+![Average Salary by Country](data_outputs/avg_salary_by_country.png)
 
 ---
 
 ## 🧮 Correlation Matrix Heatmap
 Explores relationships between numeric features in the dataset.
 
-!Correlation Heatmap
+![Correlation Matrix](data_outputs/correlation_heatmap.png)
 
 ---
 
 ## 💻 Device Usage by Subscription Tier
 Shows how various subscription groups access the service by device.
 
-!Device by Subscription
+![Device Usage by Subscription](data_outputs/device_by_subscription.png)
 
 ---
 
 ## 📈 Salary Distribution Boxplot
 Detects salary outliers and spread.
 
-!Salary Boxplot
+![Salary Outliers](data_outputs/salary_boxplot.png)
 
 ---
 
