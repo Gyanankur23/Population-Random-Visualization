@@ -222,7 +222,7 @@ Statistical summary of numeric columns.
 
 Only Age, Salary, and Device columns.
 
-`| Age | Annual Salary (USD) | Device Used |
+| Age | Annual Salary (USD) | Device Used |
 |-----|----------------------|--------------|
 | 28  | 42000               | Laptop       |
 | 35  | 81000               | Mobile       |
