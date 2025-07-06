@@ -1,4 +1,4 @@
-# Population-Random-Visualization
+#  👨‍👩‍👧‍👦Population-Random-Visualization
 
 A synthetic data generation and analysis project built to simulate large-scale population datasets using Python’s Faker module, followed by data cleaning, imputation, and visual storytelling.
 
